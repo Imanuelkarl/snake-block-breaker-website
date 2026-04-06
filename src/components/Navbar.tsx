@@ -1,7 +1,7 @@
 // src/components/Navbar.jsx
 import { Link, useLocation } from 'react-router-dom';
 import {  Menu, X } from 'lucide-react';
-import snakeLogo from '../assets/snakeLogo2.png';
+import snakeLogo from '../assets/snakelogo2.png';
 import { useState } from 'react';
 
 const Navbar = () => {

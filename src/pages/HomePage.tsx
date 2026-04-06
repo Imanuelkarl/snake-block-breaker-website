@@ -1,7 +1,7 @@
 // src/pages/HomePage.jsx
 import { ArrowRight, Trophy, Zap, Shield, Target } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import snakeLogo from '../assets/snakeLogo2.png';
+import snakeLogo from '../assets/snakelogo2.png';
 import snakeBlockLogo from '../assets/SnakeBlockLogo.png';
 import homeScreen from '../assets/home_screen.jpg';
 import mainGameScreen from '../assets/main_game_screen.jpg';
