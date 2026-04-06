@@ -2,6 +2,7 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Send, CheckCircle, AlertCircle, Mail, Phone, MapPin } from 'lucide-react';
+ 
 
 const ContactPage = () => {
   const formRef = useRef(null);
@@ -17,9 +18,9 @@ const ContactPage = () => {
 
   // IMPORTANT: Replace these with your actual EmailJS credentials
   // Get them from: https://dashboard.emailjs.com/
-  const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';     // e.g., 'service_abc123'
-  const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';   // e.g., 'template_xyz789'
-  const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';     // e.g., 'user_abc123def456'
+  const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;     // e.g., 'service_abc123'
+  const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;   // e.g., 'template_xyz789'
+  const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;     // e.g., 'user_abc123def456'
 
   const handleChange = (e: { target: { name: any; value: any; }; }) => {
     setFormData({
