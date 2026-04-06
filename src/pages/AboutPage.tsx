@@ -2,11 +2,13 @@
 import { Award, Users, Calendar, Globe } from 'lucide-react';
 
 const AboutPage = () => {
+    const companyName = import.meta.env.VITE_COMPANY_NAME;
+    const companyEmail = import.meta.env.VITE_COMPANY_EMAIL;
   return (
     <div className="max-w-4xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
       <div className="game-card">
         <h1 className="text-4xl font-bold mb-6 bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
-          About the Company
+          About {companyName||"Dareal Games"}
         </h1>
         
         <div className="flex justify-center mb-8">
@@ -22,8 +24,8 @@ const AboutPage = () => {
             <h2 className="text-2xl font-semibold mb-3 text-white flex items-center gap-2">
               <Globe className="w-6 h-6 text-green-400" /> Our Story
             </h2>
-            <p>Founded in 2022, Dareal Games is an indie game studio passionate about creating nostalgic arcade experiences with modern twists. Snake Block Breaker represents our love for classic gameplay mechanics reimagined for today's players.</p>
-            <p className="mt-2">What started as a weekend project between two friends has grown into a full-fledged game loved by thousands worldwide. We believe in simple, addictive gameplay that respects your time while providing endless fun.</p>
+            <p>{`Founded in 2023, ${companyName||"Dareal Games"} is an indie game studio passionate about creating nostalgic arcade experiences with modern twists. Snake Block Breaker represents our love for classic gameplay mechanics reimagined for today's players.`}</p>
+            <p className="mt-2">What started as a weekend project by a visionary founder has grown into a full-fledged game loved by many worldwide. We believe in simple, addictive gameplay that respects your time while providing endless fun.</p>
           </section>
           
           <section>
@@ -36,22 +38,22 @@ const AboutPage = () => {
           <div className="grid sm:grid-cols-2 gap-6 my-8">
             <div className="bg-gray-800/50 p-4 rounded-lg text-center">
               <Award className="w-8 h-8 text-yellow-500 mx-auto mb-2" />
-              <h3 className="font-bold">100k+ Players</h3>
+              <h3 className="font-bold">10+ Players</h3>
               <p className="text-sm text-gray-400">And growing daily</p>
             </div>
             <div className="bg-gray-800/50 p-4 rounded-lg text-center">
               <Calendar className="w-8 h-8 text-blue-500 mx-auto mb-2" />
-              <h3 className="font-bold">Est. 2022</h3>
+              <h3 className="font-bold">Est. 2023</h3>
               <p className="text-sm text-gray-400">Three years of game development</p>
             </div>
           </div>
           
           <section>
             <h2 className="text-2xl font-semibold mb-3 text-white">Contact Us</h2>
-            <p>📧 <a href="mailto:hello@pixelpulsegames.com" className="text-green-400 hover:underline">hello@pixelpulsegames.com</a></p>
-            <p>🐦 Twitter: <a href="#" className="text-green-400 hover:underline">@PixelPulseGames</a></p>
+            <p>📧 <a href={`mailto:${companyEmail}" className="text-green-400 hover:underline`}>{companyEmail}</a></p>
+            <p>🐦 Twitter: <a href="#" className="text-green-400 hover:underline">{companyName}</a></p>
             <p>💬 Discord: <a href="#" className="text-green-400 hover:underline">discord.gg/snakeblockbreaker</a></p>
-            <p className="mt-4 text-gray-400">📍 Virtual Studio — Remote team from 6 countries</p>
+            <p className="mt-4 text-gray-400">📍 Virtual Studio </p>
           </section>
           
           <div className="mt-6 p-4 bg-green-900/20 rounded-lg border border-green-500/30">
