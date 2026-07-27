@@ -20,8 +20,8 @@ const PrivacyPage = () => {
             </p>
             <ul className="list-disc list-inside mt-2 space-y-1 ml-4">
               <li>Game progress and high scores</li>
-              <li>Device information (browser type, OS version)</li>
-              <li>Anonymous usage statistics</li>
+              <li>Device information (browser type, OS version) to track activity</li>
+              <li>Anonymous usage statistics and activity metrics</li>
               <li>Optional email if you create an account for leaderboards</li>
             </ul>
           </section>
