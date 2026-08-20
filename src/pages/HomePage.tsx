@@ -61,7 +61,7 @@ const HomePage = () => {
 
             {/* Web Version */}
             <Link 
-              to="/p" 
+              to="https://snakeblockbreaker.netlify.app" 
               className="flex items-center gap-3 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-400 hover:to-emerald-500 border-2 border-green-400 text-white font-bold py-4 px-8 rounded-full transition-all transform hover:scale-105 hover:shadow-[0_10px_30px_rgba(74,222,128,0.4)] active:scale-95 w-full sm:w-auto justify-center"
             >
               <Globe className="w-6 h-6" />
