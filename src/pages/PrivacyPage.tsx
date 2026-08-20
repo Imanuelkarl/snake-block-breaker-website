@@ -20,7 +20,14 @@ const PrivacyPage = () => {
             </p>
             <ul className="list-disc list-inside mt-2 space-y-1 ml-4">
               <li>Game progress and high scores</li>
-              <li>Device information (browser type, OS version) to track activity</li>
+              <li>
+                Device information, including browser type, OS version, and
+                device identifiers
+              </li>
+              <li>
+                Approximate location information, which may be used to provide
+                and personalize advertisements
+              </li>
               <li>Anonymous usage statistics and activity metrics</li>
               <li>Optional email if you create an account for leaderboards</li>
             </ul>
@@ -35,6 +42,10 @@ const PrivacyPage = () => {
               <li>Save your game progress and preferences</li>
               <li>Improve game performance and features</li>
               <li>Display global leaderboards</li>
+              <li>
+                Provide, measure, and personalize advertisements based on
+                approximate location and device information
+              </li>
               <li>Send occasional game updates (with your permission)</li>
             </ul>
           </section>
@@ -45,8 +56,13 @@ const PrivacyPage = () => {
             </h2>
             <p>
               We use essential cookies to remember your game settings and
-              authentication status. Third-party analytics services may use
-              cookies to help us understand how players interact with the game.
+              authentication status. Google Play services and third-party
+              advertising or analytics providers may collect information such as
+              device identifiers, approximate location, and usage data to
+              provide, measure, and personalize ads and to help us understand
+              how players interact with the game. You can manage available ad
+              personalization and device privacy settings through your device or
+              Google account settings.
             </p>
           </section>
 
