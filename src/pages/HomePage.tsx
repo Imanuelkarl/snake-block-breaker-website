@@ -9,7 +9,7 @@ import skinScreen from '../assets/skin_screen.jpg';
 
 const HomePage = () => {
   return (
-    <div className="overflow-hidden bg-slate-950 text-white selection:bg-green-500 selection:text-white">
+     <div className="overflow-hidden bg-slate-950 text-white selection:bg-green-500 selection:text-white">
       {/* Dynamic Arcade Background */}
       <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-green-500/20 rounded-full blur-[120px]"></div>
@@ -88,8 +88,8 @@ const HomePage = () => {
         </div>
       </section>
       
-      {/* Game Features Section */}
-      <section className="relative z-10 py-24 bg-slate-900/50 backdrop-blur-md border-y border-slate-800">
+      {/* Game Features Section */}   
+                <section className="relative z-10 py-24 bg-slate-900/50 backdrop-blur-md border-y border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 inline-block mb-4">
@@ -163,7 +163,7 @@ const HomePage = () => {
             
             <div className="relative z-10 flex flex-col sm:flex-row justify-center items-center gap-4">
               <Link 
-                to="/play" 
+                to="https://snakeblockbreaker.netlify.app"  
                 className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-400 text-slate-950 font-extrabold text-lg py-4 px-10 rounded-full transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(74,222,128,0.3)] w-full sm:w-auto"
               >
                 Play Now Free <ArrowRight className="w-5 h-5" />
